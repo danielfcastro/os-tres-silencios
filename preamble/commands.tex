@@ -1,0 +1,16 @@
+\newenvironment{Encontro}[1]{%
+  \begin{tcolorbox}\textbf{Encontro:} #1\par\smallskip}{\end{tcolorbox}}
+\newenvironment{Desafio}[1]{%
+  \begin{tcolorbox}\textbf{Desafio:} #1\par\smallskip}{\end{tcolorbox}}
+\newenvironment{Consequencias}{%
+  \begin{tcolorbox}\textbf{Consequências}\par\smallskip}{\end{tcolorbox}}
+\newcommand{\NPC}[4]{%
+  \begin{tcolorbox}
+  \textbf{#1} (\emph{#2})\\
+  \textbf{Clã/Facção:} #3\\
+  \textbf{Interesses:} #4
+  \end{tcolorbox}}
+\newcommand{\Teste}[2]{\textbf{Teste:} #1 — \emph{Dificuldade #2}}
+\newcommand{\Sessao}[2]{\section*{Sessão #1 — #2}\addcontentsline{toc}{section}{Sessão #1 — #2}}
+\newcommand{\Gancho}[1]{\paragraph{Gancho} #1}
+\newcommand{\Handout}[1]{\begin{quote}\itshape #1\end{quote}}
