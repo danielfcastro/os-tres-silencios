@@ -1,0 +1,21 @@
+\usepackage[nomain,acronym,xindy,toc]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
+\makeglossaries
+\usepackage[xindy]{imakeidx}
+\makeindex
+
+\newacronym{ddye}{D$_{\text{dye}}$}{donor dye, ex. Alexa 488}
+\newacronym[description={\glslink{r0}{F\"{o}rster distance}}]{R0}{$R_{0}$}{F\"{o}rster distance}
+\newglossaryentry{r0}{name=\glslink{R0}{\ensuremath{R_{0}}},text=F\"{o}rster distance,description={F\"{o}rster distance, where 50\% ...}, sort=R}
+\newglossaryentry{kdeac}{name=\glslink{R0}{\ensuremath{k_{DEAC}}},text=$k_{DEAC}$, description={is the rate of deactivation from ... and emission)}, sort=k}
+
+\loadglsentries[main]{INP-00-glossary}
+% or using \input:
+%\input{INP-00-glossary}
+
+\begin{document}
+	\appendix
+	\bibliographystyle{plainnat}
+	\bibliography{bibtex}
+	\printindex
+	\printglossaries
+\end{document}
