@@ -1,19 +1,23 @@
-\documentclass[12pt,a4paper]{book}
-\input{preamble/preamble}
+\documentclass[HQ,portuguese,Vampire,sand]{WoDTeX} % classes/WoDTeX.cls
+\usepackage{csquotes} % opcional, útil
 \begin{document}
-\frontmatter
-\input{frontmatter/titlepage}
-\input{frontmatter/credits}
-\input{frontmatter/abstract}
+
+% Capa/Créditos/Resumo (placeholder — você pode substituir por macros da classe quando tiver os assets)
 \tableofcontents
-\mainmatter
-\input{acts/acto1-braga/index}
+
+% Ato I — Vigo
+\input{acts/acto1-vigo/index}
+
+% (futuros Atos)
 \input{acts/acto2-zaragoza/index}
 \input{acts/acto3-toledo/index}
-\appendix
+
+% Apêndices
 \input{appendices/glossario}
 \input{appendices/handouts}
-\backmatter
+
+% Bibliografia
 \bibliographystyle{alpha}
 \bibliography{bibliography/references}
+
 \end{document}
