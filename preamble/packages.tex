@@ -1,18 +1,28 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[portuguese]{babel}
+
+% Tipografia e layout
 \usepackage{microtype}
 \usepackage{geometry}
 \geometry{margin=2.5cm}
 \usepackage{setspace}
 \onehalfspacing
 \usepackage{parskip}
+
+% Gráficos e links
 \usepackage{graphicx}
 \graphicspath{{figures/}{assets/maps/}}
 \usepackage[hidelinks]{hyperref}
+
+% Utilidades
 \usepackage{enumitem}
 \usepackage{booktabs}
+
+% Caixas de destaque (tcolorbox) + libs necessárias para 'enhanced'
 \usepackage{tcolorbox}
-	cbuselibrary{skins,breakable}
+\tcbuselibrary{skins,breakable}
 \tcbset{enhanced,sharp corners,boxrule=0.4pt,colback=white}
+
+% Citações
 \usepackage{csquotes}
